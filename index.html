@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simulador de Crédito</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        #output {
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Simulador de Crédito</h1>
+
+    <form id="credit-form">
+        <label for="monto">Monto del préstamo:</label>
+        <input type="number" id="monto" required>
+        
+        <label for="interes">Tasa de interés (%):</label>
+        <input type="number" id="interes" required>
+        
+        <label for="años">Plazo (años):</label>
+        <input type="number" id="años" required>
+        
+        <button type="button" onclick="calcularPrestamo()">Calcular</button>
+        <button type="button" onclick="limpiarDatos()">Limpiar Datos</button>
+    </form>
+
+    <div id="output"></div>
+
+    <script src="app.js"></script>
+</body>
+</html>
